@@ -1,6 +1,6 @@
 {
     "Authors": "",
     "Version": "projectversion",
-    "Requires" : ["module","dropboxclient","gui","filesscreen"],
+    "Requires" : ["module","dropboxclient","gui"],
 }
 

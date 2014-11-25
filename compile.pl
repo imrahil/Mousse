@@ -1,4 +1,4 @@
-#!/bin/perl
+#!/usr/bin/perl
 use strict;
 # This script finds all modules and from that list, generates two HTML files : 
 # One that contains in itself all of the files the modules need to run ( for deployement, self-contained )
@@ -127,7 +127,7 @@ sub sort_dependencies{
         #Find the module in the original list
         my $module = {};
         for my $candidate ( @{$passed_modules} ){
-            if( $candidate->{module_name} eq $ordered_module ){ 
+            if( $candidate->{module_name} eq $ordered_module ){
                 $module = $candidate;
                 last;
             }
