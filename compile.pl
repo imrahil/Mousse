@@ -118,7 +118,7 @@ sub sort_dependencies{
     my $source = Algorithm::Dependency::Source::HoA->new( $unsorted_modules );
 
     # Sort everything
-    my $dep = Algorithm::Dependency::Ordered->new( source => $source );
+    my $dep = Algorithm::Dependency::Ordered->new( source => $source, ignore_orphans => 1 );
     my $schedule = $dep->schedule_all;
 
     # Create new list based on the new order
